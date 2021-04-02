@@ -16,6 +16,7 @@ export default function Currencies(props) {
       </div>
     );
   });
+
   return (
     <div>
       <h1>List of Currencies</h1>

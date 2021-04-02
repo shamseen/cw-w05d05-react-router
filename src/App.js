@@ -1,6 +1,7 @@
 import { Route, Link } from "react-router-dom";
 import Home from "./components/home/home";
 import Currencies from "./components/currencies/currencies";
+import Price from "./components/price/price";
 
 import "./styles.scss";
 
@@ -9,7 +10,6 @@ export default function App() {
     <div>
       <nav>
         {/* changes URL */}
-
         <Link to="/">
           <img
             src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png"
@@ -26,6 +26,17 @@ export default function App() {
         {/* using exact bc router uses inclusive or */}
         <Route path="/" exact component={Home} />
         <Route path="/currencies" component={Currencies} />
+
+        {/* :countrycode is a parameter */}
+        {/* render attribute passes props down to component */}
+        <Route
+          path="/price/:countryCode"
+          render={(routerProps) => {
+            // sub for component={Price}
+            // spread op to destructure obj
+            return <Price {...routerProps} />;
+          }}
+        />
       </main>
     </div>
   );
