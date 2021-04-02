@@ -6,7 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-​
+
 nav {
   background: black;
   color: white;
@@ -15,7 +15,7 @@ nav {
   align-items: center;
   padding: 0 20px;
 }
-​
+
 nav img {
   max-height: 50px;
   padding: 5px;
@@ -23,13 +23,13 @@ nav img {
   display: inline-block;
   vertical-align: middle;
 }
-​
+
 nav h1 {
   margin: 0;
   display: inline-block;
   vertical-align: middle;
 }
-​
+
 nav a {
   color: white;
   display: inline-block;
@@ -37,11 +37,11 @@ nav a {
   font-size: 1.2em;
   text-decoration: none;
 }
-​
+
 nav a:hover {
   background: #282c34;
 }
-​
+
 main {
   width: 900px;
   margin: auto;
